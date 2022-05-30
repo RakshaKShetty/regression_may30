@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "Page1",
-    "slug": "page1",
+    "name": "mock_database",
+    "slug": "mock-database",
     "layouts": [
       {
         "viewMode": false,
@@ -960,7 +960,7 @@
               "type": "SELECT_WIDGET",
               "serverSideFiltering": false,
               "hideCard": false,
-              "defaultOptionValue": "GREEN",
+              "defaultOptionValue": "",
               "animateLoading": true,
               "parentColumnSpace": 22.40625,
               "dynamicTriggerPathList": [],
@@ -1000,7 +1000,7 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Page1_Query1",
+              "id": "mock_database_Query1",
               "name": "Query1",
               "confirmBeforeExecute": true,
               "pluginType": "DB",
@@ -1022,14 +1022,15 @@
           "Text2"
         ],
         "validOnPageLoadActions": true,
-        "id": "Page1",
+        "id": "mock_database",
         "deleted": false,
         "policies": [],
         "userPermissions": []
       }
     ],
     "userPermissions": [],
-    "policies": []
+    "policies": [],
+    "isHidden": false
   },
   "deleted": false,
   "policies": [],

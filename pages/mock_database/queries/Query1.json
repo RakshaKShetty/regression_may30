@@ -13,7 +13,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Page1",
+    "pageId": "mock_database",
     "actionConfiguration": {
       "timeoutInMillisecond": 100000,
       "paginationType": "NONE",
@@ -111,7 +111,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Page1_Query1",
+  "id": "mock_database_Query1",
   "deleted": false,
   "gitSyncId": "6294545d01c50b76d2027c35_629482b636a07e3004f867e4"
 }
