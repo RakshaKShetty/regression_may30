@@ -13,7 +13,8 @@
     "s3",
     "Assets-test.appsmith.com",
     "SMTP",
-    "Page1"
+    "Page1",
+    "Prapulla Page"
   ],
   "publishedPageOrder": [
     "Postgre",
@@ -27,7 +28,8 @@
     "s3",
     "Assets-test.appsmith.com",
     "SMTP",
-    "Page1"
+    "Page1",
+    "Prapulla Page"
   ],
   "publishedDefaultPageName": "Postgre",
   "unpublishedDefaultPageName": "Postgre",
@@ -185,6 +187,34 @@
       "publishedUserSetOnLoad": false
     },
     "Postgre_update_old": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
+    "Prapulla Page_Api1": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
+    "Prapulla Page_Api2": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
+    "Prapulla Page_Api3": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
+    "Prapulla Page_Api4": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
+    "Prapulla Page_Api5": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
+    "Prapulla Page_Api6": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
+    "Prapulla Page_Api7": {
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
     },
