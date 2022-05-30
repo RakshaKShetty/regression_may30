@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "Page1",
-    "slug": "page1",
+    "name": "AudioRecorderWidget",
+    "slug": "audiorecorderwidget",
     "layouts": [
       {
         "viewMode": false,
@@ -26,11 +26,20 @@
           "leftColumn": 0,
           "children": [
             {
-              "boxShadow": "none",
-              "widgetName": "Audio1",
+              "boxShadow": "{{RadioGroup3.selectedOptionValue === 'N' ? 'none' : '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)'}}",
+              "widgetName": "AudioRecorder1",
               "dynamicPropertyPathList": [
                 {
-                  "key": "autoPlay"
+                  "key": "accentColor"
+                },
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "boxShadow"
+                },
+                {
+                  "key": "isDisabled"
                 },
                 {
                   "key": "isVisible"
@@ -39,37 +48,34 @@
                   "key": "animateLoading"
                 }
               ],
-              "displayName": "Audio",
-              "iconSVG": "/static/media/icon.cb54df7a.svg",
+              "displayName": "Audio Recorder",
+              "iconSVG": "/static/media/icon.3cb03cd8.svg",
               "topRow": 2,
-              "bottomRow": 6,
+              "bottomRow": 10,
               "parentRowSpace": 10,
-              "onPause": "{{showModal('Modal1')}}",
-              "type": "AUDIO_WIDGET",
+              "type": "AUDIO_RECORDER_WIDGET",
               "hideCard": false,
               "animateLoading": "{{Checkbox3.isChecked}}",
               "parentColumnSpace": 12.5625,
               "dynamicTriggerPathList": [
                 {
-                  "key": "onPlay"
-                },
-                {
-                  "key": "onPause"
-                },
-                {
-                  "key": "onEnd"
+                  "key": "onRecordingStart"
                 }
               ],
-              "leftColumn": 4,
+              "onRecordingStart": "{{showModal('Modal1')}}",
+              "leftColumn": 7,
               "dynamicBindingPathList": [
-                {
-                  "key": "borderRadius"
-                },
                 {
                   "key": "accentColor"
                 },
                 {
-                  "key": "autoPlay"
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "boxShadow"
+                },
+                {
+                  "key": "isDisabled"
                 },
                 {
                   "key": "isVisible"
@@ -78,28 +84,26 @@
                   "key": "animateLoading"
                 }
               ],
-              "key": "2k71saa3st",
+              "isDisabled": "{{Checkbox1.isChecked}}",
+              "key": "guu64dtguj",
               "isDeprecated": false,
-              "rightColumn": 32,
-              "widgetId": "w1sst3j7vk",
-              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "rightColumn": 23,
+              "widgetId": "v0j5po85qn",
+              "accentColor": "{{RadioGroup1.selectedOptionValue === 'B' ? '#0000FF' : '#964B00'}}",
               "isVisible": "{{Checkbox2.isChecked}}",
               "version": 1,
-              "onPlay": "{{showAlert('Playing!!','info')}}",
-              "url": "http://www.hyperion-records.co.uk/audiotest/18%20MacCunn%20The%20Lay%20of%20the%20Last%20Minstrel%20-%20Part%202%20Final%20chorus%20O%20Caledonia!%20stern%20and%20wild.MP3",
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
-              "onEnd": "{{copyToClipboard('Ended!')}}",
-              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "autoPlay": "{{Checkbox1.isChecked}}"
+              "borderRadius": "{{RadioGroup2.selectedOptionValue === 'SlC' ? '0.375rem' : '1.5rem'}}",
+              "iconColor": "#831843"
             },
             {
               "widgetName": "Checkbox1",
               "displayName": "Checkbox",
               "iconSVG": "/static/media/icon.aaab032b.svg",
-              "topRow": 11,
-              "bottomRow": 15,
+              "topRow": 14,
+              "bottomRow": 18,
               "parentRowSpace": 10,
               "type": "CHECKBOX_WIDGET",
               "alignWidget": "LEFT",
@@ -107,7 +111,7 @@
               "animateLoading": true,
               "parentColumnSpace": 12.5625,
               "dynamicTriggerPathList": [],
-              "leftColumn": 4,
+              "leftColumn": 7,
               "dynamicBindingPathList": [
                 {
                   "key": "accentColor"
@@ -121,11 +125,11 @@
               "key": "wu6b4q93rc",
               "isRequired": false,
               "isDeprecated": false,
-              "rightColumn": 20,
-              "widgetId": "3pvg6wu419",
+              "rightColumn": 14,
+              "widgetId": "20eae4j2jy",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "isVisible": true,
-              "label": "Auto-Play",
+              "label": "Disabled",
               "version": 1,
               "parentId": "0",
               "renderMode": "CANVAS",
@@ -137,8 +141,8 @@
               "widgetName": "Checkbox2",
               "displayName": "Checkbox",
               "iconSVG": "/static/media/icon.aaab032b.svg",
-              "topRow": 16,
-              "bottomRow": 20,
+              "topRow": 19,
+              "bottomRow": 23,
               "parentRowSpace": 10,
               "type": "CHECKBOX_WIDGET",
               "alignWidget": "LEFT",
@@ -146,7 +150,7 @@
               "animateLoading": true,
               "parentColumnSpace": 12.5625,
               "dynamicTriggerPathList": [],
-              "leftColumn": 4,
+              "leftColumn": 7,
               "dynamicBindingPathList": [
                 {
                   "key": "accentColor"
@@ -160,8 +164,8 @@
               "key": "wu6b4q93rc",
               "isRequired": false,
               "isDeprecated": false,
-              "rightColumn": 20,
-              "widgetId": "nn6ovop1yy",
+              "rightColumn": 14,
+              "widgetId": "lbemr3iebc",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "isVisible": true,
               "label": "Visible",
@@ -176,8 +180,8 @@
               "widgetName": "Checkbox3",
               "displayName": "Checkbox",
               "iconSVG": "/static/media/icon.aaab032b.svg",
-              "topRow": 21,
-              "bottomRow": 25,
+              "topRow": 24,
+              "bottomRow": 28,
               "parentRowSpace": 10,
               "type": "CHECKBOX_WIDGET",
               "alignWidget": "LEFT",
@@ -185,7 +189,7 @@
               "animateLoading": true,
               "parentColumnSpace": 12.5625,
               "dynamicTriggerPathList": [],
-              "leftColumn": 4,
+              "leftColumn": 7,
               "dynamicBindingPathList": [
                 {
                   "key": "accentColor"
@@ -199,8 +203,8 @@
               "key": "wu6b4q93rc",
               "isRequired": false,
               "isDeprecated": false,
-              "rightColumn": 20,
-              "widgetId": "1gpqekhkkt",
+              "rightColumn": 14,
+              "widgetId": "g309q5z9au",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "isVisible": true,
               "label": "Animate Loading",
@@ -210,6 +214,156 @@
               "isLoading": false,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "defaultCheckedState": true
+            },
+            {
+              "boxShadow": "none",
+              "widgetName": "RadioGroup1",
+              "displayName": "Radio Group",
+              "iconSVG": "/static/media/icon.ba2b2ee0.svg",
+              "topRow": 14,
+              "bottomRow": 22,
+              "parentRowSpace": 10,
+              "labelWidth": 5,
+              "type": "RADIO_GROUP_WIDGET",
+              "hideCard": false,
+              "defaultOptionValue": "B",
+              "animateLoading": true,
+              "parentColumnSpace": 12.5625,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 17,
+              "dynamicBindingPathList": [
+                {
+                  "key": "accentColor"
+                }
+              ],
+              "labelPosition": "Left",
+              "options": [
+                {
+                  "label": "Blue",
+                  "value": "B"
+                },
+                {
+                  "label": "Brown",
+                  "value": "Br"
+                }
+              ],
+              "isDisabled": false,
+              "key": "947t77jz59",
+              "labelTextSize": "0.875rem",
+              "isRequired": false,
+              "isDeprecated": false,
+              "rightColumn": 37,
+              "widgetId": "0bl54re5e2",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "isVisible": true,
+              "label": "ButtonColor",
+              "version": 1,
+              "parentId": "0",
+              "labelAlignment": "left",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "isInline": true,
+              "alignment": "left"
+            },
+            {
+              "boxShadow": "none",
+              "widgetName": "RadioGroup2",
+              "displayName": "Radio Group",
+              "iconSVG": "/static/media/icon.ba2b2ee0.svg",
+              "topRow": 14,
+              "bottomRow": 22,
+              "parentRowSpace": 10,
+              "labelWidth": 5,
+              "type": "RADIO_GROUP_WIDGET",
+              "hideCard": false,
+              "defaultOptionValue": "SlC",
+              "animateLoading": true,
+              "parentColumnSpace": 12.5625,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 39,
+              "dynamicBindingPathList": [
+                {
+                  "key": "accentColor"
+                }
+              ],
+              "labelPosition": "Left",
+              "options": [
+                {
+                  "label": "Slightly Curved",
+                  "value": "SlC"
+                },
+                {
+                  "label": "Rounded",
+                  "value": "R"
+                }
+              ],
+              "isDisabled": false,
+              "key": "947t77jz59",
+              "labelTextSize": "0.875rem",
+              "isRequired": false,
+              "isDeprecated": false,
+              "rightColumn": 59,
+              "widgetId": "d7f53wpgpz",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "isVisible": true,
+              "label": "BorderRadius",
+              "version": 1,
+              "parentId": "0",
+              "labelAlignment": "left",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "isInline": true,
+              "alignment": "left"
+            },
+            {
+              "boxShadow": "none",
+              "widgetName": "RadioGroup3",
+              "displayName": "Radio Group",
+              "iconSVG": "/static/media/icon.ba2b2ee0.svg",
+              "topRow": 24,
+              "bottomRow": 32,
+              "parentRowSpace": 10,
+              "labelWidth": 5,
+              "type": "RADIO_GROUP_WIDGET",
+              "hideCard": false,
+              "defaultOptionValue": "N",
+              "animateLoading": true,
+              "parentColumnSpace": 12.5625,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 29,
+              "dynamicBindingPathList": [
+                {
+                  "key": "accentColor"
+                }
+              ],
+              "labelPosition": "Left",
+              "options": [
+                {
+                  "label": "None",
+                  "value": "N"
+                },
+                {
+                  "label": "Shadow",
+                  "value": "S"
+                }
+              ],
+              "isDisabled": false,
+              "key": "947t77jz59",
+              "labelTextSize": "0.875rem",
+              "isRequired": false,
+              "isDeprecated": false,
+              "rightColumn": 49,
+              "widgetId": "8audedyeni",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "isVisible": true,
+              "label": "Label",
+              "version": 1,
+              "parentId": "0",
+              "labelAlignment": "left",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "isInline": true,
+              "alignment": "left"
             },
             {
               "boxShadow": "none",
@@ -282,10 +436,10 @@
                       "isDeprecated": false,
                       "rightColumn": 64,
                       "iconName": "cross",
-                      "widgetId": "vf750inma4",
+                      "widgetId": "86twhpnuxi",
                       "isVisible": true,
                       "version": 1,
-                      "parentId": "x02wv22dx7",
+                      "parentId": "3ks7ccymuw",
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
@@ -314,17 +468,17 @@
                       ],
                       "shouldTruncate": false,
                       "truncateButtonColor": "#FFC13D",
-                      "text": "PAUSED!!!",
+                      "text": "Started!!!",
                       "key": "urx8zwqzxs",
                       "isDeprecated": false,
                       "rightColumn": 41,
                       "textAlign": "LEFT",
-                      "widgetId": "fm8bbc2mbx",
+                      "widgetId": "wmjocnjaux",
                       "isVisible": true,
                       "fontStyle": "BOLD",
                       "textColor": "#231F20",
                       "version": 1,
-                      "parentId": "x02wv22dx7",
+                      "parentId": "3ks7ccymuw",
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
@@ -357,12 +511,12 @@
                       "isDeprecated": false,
                       "rightColumn": 48,
                       "isDefaultClickDisabled": true,
-                      "widgetId": "andhv0n7hs",
+                      "widgetId": "cuol3b4nab",
                       "buttonStyle": "PRIMARY",
                       "isVisible": true,
                       "recaptchaType": "V3",
                       "version": 1,
-                      "parentId": "x02wv22dx7",
+                      "parentId": "3ks7ccymuw",
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
@@ -395,12 +549,12 @@
                       "isDeprecated": false,
                       "rightColumn": 64,
                       "isDefaultClickDisabled": true,
-                      "widgetId": "b6g1orn60g",
+                      "widgetId": "jkc43i1ytj",
                       "buttonStyle": "PRIMARY_BUTTON",
                       "isVisible": true,
                       "recaptchaType": "V3",
                       "version": 1,
-                      "parentId": "x02wv22dx7",
+                      "parentId": "3ks7ccymuw",
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
@@ -413,11 +567,11 @@
                   "isDeprecated": false,
                   "rightColumn": 0,
                   "detachFromLayout": true,
-                  "widgetId": "x02wv22dx7",
+                  "widgetId": "3ks7ccymuw",
                   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                   "isVisible": true,
                   "version": 1,
-                  "parentId": "p5rbyl360y",
+                  "parentId": "ryeourpmk0",
                   "renderMode": "CANVAS",
                   "isLoading": false,
                   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
@@ -428,7 +582,7 @@
               "isDeprecated": false,
               "rightColumn": 0,
               "detachFromLayout": true,
-              "widgetId": "p5rbyl360y",
+              "widgetId": "ryeourpmk0",
               "canOutsideClickClose": true,
               "canEscapeKeyClose": true,
               "version": 2,
@@ -442,7 +596,7 @@
         },
         "layoutOnLoadActions": [],
         "widgetNames": [
-          "Audio1",
+          "AudioRecorder1",
           "Button1",
           "Button2",
           "Canvas1",
@@ -452,19 +606,23 @@
           "IconButton1",
           "MainContainer",
           "Modal1",
+          "RadioGroup1",
+          "RadioGroup2",
+          "RadioGroup3",
           "Text1"
         ],
         "validOnPageLoadActions": true,
-        "id": "Page1",
+        "id": "AudioRecorderWidget",
         "deleted": false,
         "policies": [],
         "userPermissions": []
       }
     ],
     "userPermissions": [],
-    "policies": []
+    "policies": [],
+    "isHidden": false
   },
   "deleted": false,
   "policies": [],
-  "gitSyncId": "629458bd01c50b76d2027c93_6294b4370b092f4f690a610e"
+  "gitSyncId": "629458bd01c50b76d2027c93_6294c4f40b092f4f690a63a5"
 }

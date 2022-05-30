@@ -5,13 +5,15 @@
     "MenuButtonWidget",
     "Rating Widget",
     "InputWidget",
-    "Page1"
+    "AudioWidget",
+    "AudioRecorderWidget"
   ],
   "publishedPageOrder": [
     "MenuButtonWidget",
     "Rating Widget",
     "InputWidget",
-    "Page1"
+    "AudioWidget",
+    "AudioRecorderWidget"
   ],
   "publishedDefaultPageName": "MenuButtonWidget",
   "unpublishedDefaultPageName": "MenuButtonWidget",
