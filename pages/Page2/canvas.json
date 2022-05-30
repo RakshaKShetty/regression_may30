@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 560,
+          "bottomRow": 670,
           "containerStyle": "none",
           "snapRows": 56,
           "parentRowSpace": 1,
@@ -26,134 +26,293 @@
           "leftColumn": 0,
           "children": [
             {
-              "boxShadow": "none",
-              "widgetName": "DocumentViewer1",
-              "isCanvas": false,
-              "dynamicPropertyPathList": [
+              "tabId": "",
+              "boxShadow": "NONE",
+              "widgetName": "Container1",
+              "borderColor": "transparent",
+              "isCanvas": true,
+              "displayName": "Container",
+              "iconSVG": "/static/media/icon.1977dca3.svg",
+              "topRow": 3,
+              "bottomRow": 51,
+              "parentRowSpace": 10,
+              "type": "CONTAINER_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 9.43359375,
+              "leftColumn": 4,
+              "children": [
                 {
-                  "key": "isVisible"
+                  "rightColumn": 603.75,
+                  "widgetName": "Canvas1",
+                  "detachFromLayout": true,
+                  "widgetId": "s9bmca61yu",
+                  "containerStyle": "none",
+                  "bottomRow": 480,
+                  "topRow": 0,
+                  "parentRowSpace": 1,
+                  "isVisible": true,
+                  "type": "CANVAS_WIDGET",
+                  "canExtend": false,
+                  "version": 1,
+                  "parentId": "m7ajo0tk54",
+                  "props": {
+                    "containerStyle": "none",
+                    "canExtend": false,
+                    "detachFromLayout": true,
+                    "children": []
+                  },
+                  "isLoading": false,
+                  "minHeight": 462.875,
+                  "renderMode": "CANVAS",
+                  "parentColumnSpace": 1,
+                  "leftColumn": 0,
+                  "children": [
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "Button1",
+                      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "displayName": "Button",
+                      "iconSVG": "/static/media/icon.cca02633.svg",
+                      "topRow": 42,
+                      "bottomRow": 46,
+                      "parentRowSpace": 10,
+                      "type": "BUTTON_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 9.43359375,
+                      "leftColumn": 9.6,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "buttonColor"
+                        },
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
+                      "text": "Submit",
+                      "isDisabled": false,
+                      "key": "5skz505nro",
+                      "isDeprecated": false,
+                      "rightColumn": 26.666666666666668,
+                      "isDefaultClickDisabled": true,
+                      "widgetId": "v605guqosp",
+                      "isVisible": true,
+                      "recaptchaType": "V3",
+                      "version": 1,
+                      "parentId": "s9bmca61yu",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "buttonVariant": "PRIMARY",
+                      "placement": "CENTER"
+                    },
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "DocumentViewer1",
+                      "isCanvas": false,
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "isVisible"
+                        }
+                      ],
+                      "displayName": "Document Viewer",
+                      "iconSVG": "/static/media/icon.09fcd36b.svg",
+                      "topRow": 0,
+                      "bottomRow": 40,
+                      "parentRowSpace": 10,
+                      "type": "DOCUMENT_VIEWER_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 9.43359375,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 0,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "borderRadius"
+                        },
+                        {
+                          "key": "accentColor"
+                        },
+                        {
+                          "key": "docUrl"
+                        },
+                        {
+                          "key": "isVisible"
+                        }
+                      ],
+                      "key": "ipzxhk1n62",
+                      "isDeprecated": false,
+                      "rightColumn": 46,
+                      "widgetId": "safl1pf7rb",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "isVisible": "{{Button1.text===\"Submi\"?false:true}}",
+                      "version": 1,
+                      "parentId": "s9bmca61yu",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "docUrl": "{{FilePicker1.files[0].data}}"
+                    },
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "FilePicker1",
+                      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "displayName": "FilePicker",
+                      "iconSVG": "/static/media/icon.7c5ad9c3.svg",
+                      "topRow": 32,
+                      "bottomRow": 36,
+                      "parentRowSpace": 10,
+                      "allowedFileTypes": [],
+                      "type": "FILE_PICKER_WIDGET_V2",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 9.43359375,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 46,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "buttonColor"
+                        },
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
+                      "isDisabled": false,
+                      "key": "mt1ut9tfqj",
+                      "isRequired": false,
+                      "isDeprecated": false,
+                      "rightColumn": 63,
+                      "isDefaultClickDisabled": true,
+                      "widgetId": "e71y6nhr7o",
+                      "isVisible": true,
+                      "label": "Select Files",
+                      "maxFileSize": "15",
+                      "version": 1,
+                      "fileDataType": "Base64",
+                      "parentId": "s9bmca61yu",
+                      "selectedFiles": [],
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "files": [],
+                      "maxNumFiles": "2"
+                    },
+                    {
+                      "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+                      "widgetName": "Image1",
+                      "onClick": "{{showAlert('Hello')}}",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
+                      "displayName": "Image",
+                      "iconSVG": "/static/media/icon.52d8fb96.svg",
+                      "topRow": 4,
+                      "bottomRow": 23,
+                      "parentRowSpace": 10,
+                      "type": "IMAGE_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 9.43359375,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
+                      "imageShape": "RECTANGLE",
+                      "leftColumn": 46,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "image"
+                        },
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
+                      "defaultImage": "data:image/jpeg;base64,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",
+                      "key": "jwk1t43ubs",
+                      "image": "{{FilePicker1.files[1].data}}",
+                      "isDeprecated": false,
+                      "rightColumn": 64,
+                      "objectFit": "contain",
+                      "widgetId": "qypa0etoza",
+                      "isVisible": true,
+                      "version": 1,
+                      "parentId": "s9bmca61yu",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "maxZoomLevel": 1,
+                      "enableDownload": true,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "enableRotation": true
+                    }
+                  ]
                 }
               ],
-              "displayName": "Document Viewer",
-              "iconSVG": "/static/media/icon.09fcd36b.svg",
-              "topRow": 3,
-              "bottomRow": 43,
+              "borderWidth": "0",
+              "key": "e7s8xj070k",
+              "backgroundColor": "#FFFFFF",
+              "isDeprecated": false,
+              "rightColumn": 64,
+              "widgetId": "m7ajo0tk54",
+              "containerStyle": "card",
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false
+            },
+            {
+              "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+              "widgetName": "IconButton1",
+              "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+              "dynamicPropertyPathList": [
+                {
+                  "key": "iconName"
+                }
+              ],
+              "displayName": "Icon Button",
+              "iconSVG": "/static/media/icon.1a0c634a.svg",
+              "topRow": 55,
+              "bottomRow": 65,
               "parentRowSpace": 10,
-              "type": "DOCUMENT_VIEWER_WIDGET",
+              "type": "ICON_BUTTON_WIDGET",
               "hideCard": false,
               "animateLoading": true,
               "parentColumnSpace": 10.0625,
               "dynamicTriggerPathList": [],
-              "leftColumn": 4,
-              "dynamicBindingPathList": [
-                {
-                  "key": "borderRadius"
-                },
-                {
-                  "key": "accentColor"
-                },
-                {
-                  "key": "docUrl"
-                }
-              ],
-              "key": "ipzxhk1n62",
-              "isDeprecated": false,
-              "rightColumn": 33,
-              "widgetId": "5sa3dem819",
-              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-              "isVisible": "",
-              "version": 1,
-              "parentId": "0",
-              "renderMode": "CANVAS",
-              "isLoading": false,
-              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "docUrl": "{{FilePicker1.files[0].data}}"
-            },
-            {
-              "boxShadow": "none",
-              "widgetName": "Image1",
-              "displayName": "Image",
-              "iconSVG": "/static/media/icon.52d8fb96.svg",
-              "topRow": 7,
-              "bottomRow": 26,
-              "parentRowSpace": 10,
-              "type": "IMAGE_WIDGET",
-              "hideCard": false,
-              "animateLoading": true,
-              "parentColumnSpace": 10.0625,
-              "imageShape": "RECTANGLE",
-              "leftColumn": 37,
-              "dynamicBindingPathList": [
-                {
-                  "key": "borderRadius"
-                }
-              ],
-              "defaultImage": "https://assets.appsmith.com/widgets/default.png",
-              "key": "jwk1t43ubs",
-              "image": "",
-              "isDeprecated": false,
-              "rightColumn": 64,
-              "objectFit": "contain",
-              "widgetId": "7yu25o0eh7",
-              "isVisible": true,
-              "version": 1,
-              "parentId": "0",
-              "renderMode": "CANVAS",
-              "isLoading": false,
-              "maxZoomLevel": 1,
-              "enableDownload": false,
-              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "enableRotation": false
-            },
-            {
-              "boxShadow": "none",
-              "widgetName": "FilePicker1",
-              "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-              "displayName": "FilePicker",
-              "iconSVG": "/static/media/icon.7c5ad9c3.svg",
-              "topRow": 35,
-              "bottomRow": 39,
-              "parentRowSpace": 10,
-              "allowedFileTypes": [],
-              "type": "FILE_PICKER_WIDGET_V2",
-              "hideCard": false,
-              "animateLoading": true,
-              "parentColumnSpace": 10.0625,
-              "leftColumn": 33,
+              "leftColumn": 12,
               "dynamicBindingPathList": [
                 {
                   "key": "buttonColor"
-                },
-                {
-                  "key": "borderRadius"
                 }
               ],
               "isDisabled": false,
-              "key": "mt1ut9tfqj",
-              "isRequired": false,
+              "key": "bp31b4bav9",
               "isDeprecated": false,
-              "rightColumn": 49,
-              "isDefaultClickDisabled": true,
-              "widgetId": "a7r0kmy5mn",
+              "rightColumn": 29,
+              "iconName": "play",
+              "widgetId": "od6j68yhaf",
               "isVisible": true,
-              "label": "Select Files",
-              "maxFileSize": 5,
               "version": 1,
-              "fileDataType": "Base64",
               "parentId": "0",
-              "selectedFiles": [],
               "renderMode": "CANVAS",
               "isLoading": false,
-              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "files": [],
-              "maxNumFiles": 1
+              "borderRadius": "1.5rem",
+              "buttonVariant": "PRIMARY"
             }
           ]
         },
         "layoutOnLoadActions": [],
         "widgetNames": [
+          "Button1",
+          "Canvas1",
+          "Container1",
           "DocumentViewer1",
           "FilePicker1",
+          "IconButton1",
           "Image1",
           "MainContainer"
         ],
