@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 820,
+          "bottomRow": 970,
           "containerStyle": "none",
           "snapRows": 82,
           "parentRowSpace": 1,
@@ -259,11 +259,14 @@
               "isLoading": false
             },
             {
-              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-              "isVisibleDownload": true,
+              "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+              "multiRowSelection": true,
+              "onSort": "{{showAlert('sorted')}}",
+              "isVisibleDownload": "{{Button1.text === \"Submit\"}}",
               "iconSVG": "/static/media/icon.db8a9cbd.svg",
               "topRow": 5,
               "isSortable": "{{Button1.text === \"Submit\"}}",
+              "onPageChange": "{{showAlert('page changed')}}",
               "type": "TABLE_WIDGET",
               "animateLoading": true,
               "dynamicBindingPathList": [
@@ -328,9 +331,6 @@
                   "key": "primaryColumns.borderradius.computedValue"
                 },
                 {
-                  "key": "primaryColumns.t.fontStyle"
-                },
-                {
                   "key": "primaryColumns.t.computedValue"
                 },
                 {
@@ -358,16 +358,7 @@
                   "key": "primaryColumns.latitude.computedValue"
                 },
                 {
-                  "key": "primaryColumns.gender.verticalAlignment"
-                },
-                {
-                  "key": "primaryColumns.gender.fontStyle"
-                },
-                {
                   "key": "primaryColumns.gender.textSize"
-                },
-                {
-                  "key": "primaryColumns.gender.horizontalAlignment"
                 },
                 {
                   "key": "primaryColumns.gender.isCellVisible"
@@ -376,16 +367,7 @@
                   "key": "primaryColumns.gender.computedValue"
                 },
                 {
-                  "key": "primaryColumns.id.verticalAlignment"
-                },
-                {
-                  "key": "primaryColumns.id.fontStyle"
-                },
-                {
                   "key": "primaryColumns.id.textSize"
-                },
-                {
-                  "key": "primaryColumns.id.horizontalAlignment"
                 },
                 {
                   "key": "primaryColumns.id.isCellVisible"
@@ -395,12 +377,6 @@
                 },
                 {
                   "key": "accentColor"
-                },
-                {
-                  "key": "borderRadius"
-                },
-                {
-                  "key": "boxShadow"
                 },
                 {
                   "key": "derivedColumns.customColumn3.menuVariant"
@@ -425,17 +401,32 @@
                 },
                 {
                   "key": "isSortable"
+                },
+                {
+                  "key": "isVisibleSearch"
+                },
+                {
+                  "key": "isVisibleFilters"
+                },
+                {
+                  "key": "isVisibleDownload"
+                },
+                {
+                  "key": "isVisiblePagination"
                 }
               ],
               "leftColumn": 3,
               "delimiter": ",",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-              "isVisibleFilters": true,
+              "isVisibleFilters": "{{Button1.text === \"Submit\"}}",
               "isVisible": "{{Button1.text === \"Submit\"}}",
+              "fontStyle": "",
               "enableClientSideSearch": true,
               "version": 3,
+              "textColor": "#71717a",
               "totalRecordsCount": 0,
               "isLoading": false,
+              "onSearchTextChanged": "{{showAlert('searched','warning')}}",
               "childStylesheet": {
                 "button": {
                   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -453,7 +444,7 @@
                   "boxShadow": "none"
                 }
               },
-              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "borderRadius": "1.5rem",
               "primaryColumnId": "id",
               "columnSizeMap": {
                 "task": 245,
@@ -564,14 +555,27 @@
                 },
                 {
                   "key": "isSortable"
+                },
+                {
+                  "key": "isVisibleSearch"
+                },
+                {
+                  "key": "isVisibleFilters"
+                },
+                {
+                  "key": "isVisibleDownload"
+                },
+                {
+                  "key": "isVisiblePagination"
                 }
               ],
               "compactMode": "DEFAULT",
               "displayName": "Table",
-              "bottomRow": 36,
+              "bottomRow": 37,
               "parentRowSpace": 10,
               "defaultSelectedRow": "1",
               "hideCard": false,
+              "onPageSizeChange": "{{showAlert('page size changed','error')}}",
               "parentColumnSpace": 20.0625,
               "dynamicTriggerPathList": [
                 {
@@ -588,6 +592,21 @@
                 },
                 {
                   "key": "primaryColumns.customColumn3.menuItems.menuItemue93kfeg3m.onClick"
+                },
+                {
+                  "key": "onRowSelected"
+                },
+                {
+                  "key": "onPageChange"
+                },
+                {
+                  "key": "onPageSizeChange"
+                },
+                {
+                  "key": "onSearchTextChanged"
+                },
+                {
+                  "key": "onSort"
                 }
               ],
               "primaryColumns": {
@@ -595,12 +614,12 @@
                   "index": 0,
                   "width": 150,
                   "id": "id",
-                  "horizontalAlignment": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.id  >10 ? \"LEFT\" : \"RIGHT\"))}}",
-                  "verticalAlignment": "{{Table1.sanitizedTableData.map((currentRow) => ( Button1.text === \"Submit\" ? \"TOP\" : \"BOTTOM\"))}}",
+                  "horizontalAlignment": "CENTER",
+                  "verticalAlignment": "TOP",
                   "columnType": "number",
-                  "textColor": "#1e40af",
+                  "textColor": "#71717a",
                   "textSize": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.id  >10 ? \"0.8rem\" : \"1.0rem\"))}}",
-                  "fontStyle": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.gender === \"male\" ? \"BOLD\" : \"ITALIC\"))}}",
+                  "fontStyle": "",
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": true,
@@ -609,17 +628,17 @@
                   "isDerived": false,
                   "label": "id_no",
                   "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.id))}}",
-                  "cellBackground": "#fdf2f8",
+                  "cellBackground": "#dbeafe",
                   "iconName": ""
                 },
                 "gender": {
                   "index": 1,
                   "width": 150,
                   "id": "gender",
-                  "horizontalAlignment": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.gender === 'male' ? \"LEFT\" : \"RIGHT\"))}}",
-                  "verticalAlignment": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.gender === 'male' ? \"TOP\" : \"BOTTOM\"))}}",
+                  "horizontalAlignment": "CENTER",
+                  "verticalAlignment": "TOP",
                   "columnType": "text",
-                  "textColor": "#ef4444",
+                  "textColor": "#71717a",
                   "textSize": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.gender === 'male' ? \"0.8rem\" : \"1.2rem\"))}}",
                   "enableFilter": true,
                   "enableSort": true,
@@ -629,17 +648,17 @@
                   "isDerived": false,
                   "label": "gender",
                   "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.gender))}}",
-                  "cellBackground": "#eef2ff",
-                  "fontStyle": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.gender === 'male' ? \"ITALIC,UNDERLINE\" : \"BOLD\"))}}"
+                  "cellBackground": "#dbeafe",
+                  "fontStyle": ""
                 },
                 "latitude": {
                   "index": 2,
                   "width": 150,
                   "id": "latitude",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
+                  "horizontalAlignment": "CENTER",
+                  "verticalAlignment": "TOP",
                   "columnType": "text",
-                  "textColor": "",
+                  "textColor": "#71717a",
                   "textSize": "0.875rem",
                   "enableFilter": true,
                   "enableSort": true,
@@ -649,16 +668,17 @@
                   "isDerived": false,
                   "label": "latitude",
                   "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.latitude))}}",
-                  "cellBackground": ""
+                  "cellBackground": "#dbeafe",
+                  "fontStyle": ""
                 },
                 "longitude": {
                   "index": 3,
                   "width": 150,
                   "id": "longitude",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
+                  "horizontalAlignment": "CENTER",
+                  "verticalAlignment": "TOP",
                   "columnType": "text",
-                  "textColor": "",
+                  "textColor": "#71717a",
                   "textSize": "0.875rem",
                   "enableFilter": true,
                   "enableSort": true,
@@ -668,16 +688,17 @@
                   "isDerived": false,
                   "label": "longitude",
                   "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.longitude))}}",
-                  "cellBackground": ""
+                  "cellBackground": "#dbeafe",
+                  "fontStyle": ""
                 },
                 "dob": {
                   "index": 4,
                   "width": 150,
                   "id": "dob",
-                  "horizontalAlignment": "RIGHT",
-                  "verticalAlignment": "BOTTOM",
+                  "horizontalAlignment": "CENTER",
+                  "verticalAlignment": "TOP",
                   "columnType": "date",
-                  "textColor": "#dc2626",
+                  "textColor": "#71717a",
                   "textSize": "1rem",
                   "enableFilter": true,
                   "enableSort": true,
@@ -687,19 +708,19 @@
                   "isDerived": false,
                   "label": "dob",
                   "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.dob))}}",
-                  "cellBackground": "",
+                  "cellBackground": "#dbeafe",
                   "iconName": "",
                   "outputFormat": "YYYY-MM-DD",
-                  "fontStyle": "UNDERLINE"
+                  "fontStyle": ""
                 },
                 "phone": {
                   "index": 5,
                   "width": 150,
                   "id": "phone",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
+                  "horizontalAlignment": "CENTER",
+                  "verticalAlignment": "TOP",
                   "columnType": "text",
-                  "textColor": "",
+                  "textColor": "#71717a",
                   "textSize": "0.875rem",
                   "enableFilter": true,
                   "enableSort": true,
@@ -709,16 +730,17 @@
                   "isDerived": false,
                   "label": "phone",
                   "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.phone))}}",
-                  "cellBackground": ""
+                  "cellBackground": "#dbeafe",
+                  "fontStyle": ""
                 },
                 "email": {
                   "index": 6,
                   "width": 150,
                   "id": "email",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
+                  "horizontalAlignment": "CENTER",
+                  "verticalAlignment": "TOP",
                   "columnType": "text",
-                  "textColor": "",
+                  "textColor": "#71717a",
                   "textSize": "0.875rem",
                   "enableFilter": true,
                   "enableSort": true,
@@ -728,16 +750,17 @@
                   "isDerived": false,
                   "label": "email",
                   "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.email))}}",
-                  "cellBackground": ""
+                  "cellBackground": "#dbeafe",
+                  "fontStyle": ""
                 },
                 "image": {
                   "index": 7,
                   "width": 150,
                   "id": "image",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
+                  "horizontalAlignment": "CENTER",
+                  "verticalAlignment": "TOP",
                   "columnType": "image",
-                  "textColor": "",
+                  "textColor": "#71717a",
                   "textSize": "0.875rem",
                   "enableFilter": true,
                   "enableSort": true,
@@ -747,18 +770,19 @@
                   "isDerived": false,
                   "label": "image",
                   "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.image))}}",
-                  "cellBackground": "",
+                  "cellBackground": "#dbeafe",
                   "iconName": "",
-                  "onClick": "{{showModal('Modal1')}}"
+                  "onClick": "{{showModal('Modal1')}}",
+                  "fontStyle": ""
                 },
                 "country": {
                   "index": 8,
                   "width": 150,
                   "id": "country",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
+                  "horizontalAlignment": "CENTER",
+                  "verticalAlignment": "TOP",
                   "columnType": "text",
-                  "textColor": "",
+                  "textColor": "#71717a",
                   "textSize": "0.875rem",
                   "enableFilter": true,
                   "enableSort": true,
@@ -768,16 +792,17 @@
                   "isDerived": false,
                   "label": "country",
                   "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.country))}}",
-                  "cellBackground": ""
+                  "cellBackground": "#dbeafe",
+                  "fontStyle": ""
                 },
                 "name": {
                   "index": 9,
                   "width": 150,
                   "id": "name",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
+                  "horizontalAlignment": "CENTER",
+                  "verticalAlignment": "TOP",
                   "columnType": "text",
-                  "textColor": "",
+                  "textColor": "#71717a",
                   "textSize": "0.875rem",
                   "enableFilter": true,
                   "enableSort": true,
@@ -787,16 +812,17 @@
                   "isDerived": false,
                   "label": "name",
                   "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.name))}}",
-                  "cellBackground": ""
+                  "cellBackground": "#dbeafe",
+                  "fontStyle": ""
                 },
                 "t": {
                   "index": 10,
                   "width": 150,
                   "id": "t",
-                  "horizontalAlignment": "RIGHT",
-                  "verticalAlignment": "CENTER",
+                  "horizontalAlignment": "CENTER",
+                  "verticalAlignment": "TOP",
                   "columnType": "text",
-                  "textColor": "",
+                  "textColor": "#71717a",
                   "textSize": "0.875rem",
                   "enableFilter": true,
                   "enableSort": true,
@@ -806,17 +832,17 @@
                   "isDerived": false,
                   "label": "t",
                   "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( 'TEST'))}}",
-                  "cellBackground": "",
-                  "fontStyle": "{{Table1.sanitizedTableData.map((currentRow) => ( Button1.text === \"Submit\" ? \"BOLD\" : \"ITALIC\"))}}"
+                  "cellBackground": "#dbeafe",
+                  "fontStyle": ""
                 },
                 "borderradius": {
                   "index": 11,
                   "width": 150,
                   "id": "borderradius",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
+                  "horizontalAlignment": "CENTER",
+                  "verticalAlignment": "TOP",
                   "columnType": "text",
-                  "textColor": "",
+                  "textColor": "#71717a",
                   "textSize": "0.875rem",
                   "enableFilter": true,
                   "enableSort": true,
@@ -826,16 +852,17 @@
                   "isDerived": false,
                   "label": "borderradius",
                   "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.borderradius))}}",
-                  "cellBackground": ""
+                  "cellBackground": "#dbeafe",
+                  "fontStyle": ""
                 },
                 "BorderRadius": {
                   "index": 12,
                   "width": 150,
                   "id": "BorderRadius",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
+                  "horizontalAlignment": "CENTER",
+                  "verticalAlignment": "TOP",
                   "columnType": "text",
-                  "textColor": "",
+                  "textColor": "#71717a",
                   "textSize": "0.875rem",
                   "enableFilter": true,
                   "enableSort": true,
@@ -845,7 +872,8 @@
                   "isDerived": false,
                   "label": "BorderRadius",
                   "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.BorderRadius))}}",
-                  "cellBackground": ""
+                  "cellBackground": "#dbeafe",
+                  "fontStyle": ""
                 },
                 "customColumn1": {
                   "index": 13,
@@ -868,7 +896,12 @@
                   "iconName": "",
                   "buttonLabel": "{{Table1.sanitizedTableData.map((currentRow) => ( 'Click'))}}",
                   "buttonVariant": "{{Table1.sanitizedTableData.map((currentRow) => ( Button1.text === \"Submit\" ? \"PRIMARY\" : \"SECONDARY\"))}}",
-                  "onClick": "{{showAlert('Table button clicked')}}"
+                  "onClick": "{{showAlert('Table button clicked')}}",
+                  "cellBackground": "#dbeafe",
+                  "textColor": "#71717a",
+                  "fontStyle": "",
+                  "horizontalAlignment": "CENTER",
+                  "verticalAlignment": "TOP"
                 },
                 "customColumn2": {
                   "index": 14,
@@ -891,7 +924,12 @@
                   "iconName": "{{Table1.sanitizedTableData.map((currentRow) => ( Button1.text === \"Submi\" ? \"tick\" : \"cross\"))}}",
                   "buttonColor": "#22c55e",
                   "buttonVariant": "{{Table1.sanitizedTableData.map((currentRow) => ( Button1.text === \"Submit\" ? \"TERTIARY\" : \"SECONDARY\"))}}",
-                  "onClick": "{{showAlert('icon clicked','error')}}"
+                  "onClick": "{{showAlert('icon clicked','error')}}",
+                  "cellBackground": "#dbeafe",
+                  "textColor": "#71717a",
+                  "fontStyle": "",
+                  "horizontalAlignment": "CENTER",
+                  "verticalAlignment": "TOP"
                 },
                 "customColumn3": {
                   "index": 15,
@@ -956,9 +994,15 @@
                   },
                   "isCompact": "{{Table1.sanitizedTableData.map((currentRow) => ( Button1.text === \"Submit\"))}}",
                   "iconAlign": "right",
-                  "menuVariant": "{{Button1.text === \"Submit\" ? \"SECONDARY\" : \"PRIMARY\"}}"
+                  "menuVariant": "{{Button1.text === \"Submit\" ? \"SECONDARY\" : \"PRIMARY\"}}",
+                  "cellBackground": "#dbeafe",
+                  "textColor": "#71717a",
+                  "fontStyle": "",
+                  "horizontalAlignment": "CENTER",
+                  "verticalAlignment": "TOP"
                 }
               },
+              "onRowSelected": "{{showAlert('Row selected','info')}}",
               "defaultSearchText": "",
               "key": "ovacx7vzkv",
               "derivedColumns": {
@@ -983,7 +1027,12 @@
                   "iconName": "",
                   "buttonLabel": "{{Table1.sanitizedTableData.map((currentRow) => ( 'Click'))}}",
                   "buttonVariant": "{{Table1.sanitizedTableData.map((currentRow) => ( Button1.text === \"Submit\" ? \"PRIMARY\" : \"SECONDARY\"))}}",
-                  "onClick": "{{showAlert('Table button clicked')}}"
+                  "onClick": "{{showAlert('Table button clicked')}}",
+                  "cellBackground": "#dbeafe",
+                  "textColor": "#71717a",
+                  "fontStyle": "",
+                  "horizontalAlignment": "CENTER",
+                  "verticalAlignment": "TOP"
                 },
                 "customColumn2": {
                   "index": 14,
@@ -1006,7 +1055,12 @@
                   "iconName": "{{Table1.sanitizedTableData.map((currentRow) => ( Button1.text === \"Submi\" ? \"tick\" : \"cross\"))}}",
                   "buttonColor": "#22c55e",
                   "buttonVariant": "{{Table1.sanitizedTableData.map((currentRow) => ( Button1.text === \"Submit\" ? \"TERTIARY\" : \"SECONDARY\"))}}",
-                  "onClick": "{{showAlert('icon clicked','error')}}"
+                  "onClick": "{{showAlert('icon clicked','error')}}",
+                  "cellBackground": "#dbeafe",
+                  "textColor": "#71717a",
+                  "fontStyle": "",
+                  "horizontalAlignment": "CENTER",
+                  "verticalAlignment": "TOP"
                 },
                 "customColumn3": {
                   "index": 15,
@@ -1071,7 +1125,12 @@
                   },
                   "isCompact": "{{Table1.sanitizedTableData.map((currentRow) => ( Button1.text === \"Submit\"))}}",
                   "iconAlign": "right",
-                  "menuVariant": "{{Button1.text === \"Submit\" ? \"SECONDARY\" : \"PRIMARY\"}}"
+                  "menuVariant": "{{Button1.text === \"Submit\" ? \"SECONDARY\" : \"PRIMARY\"}}",
+                  "cellBackground": "#dbeafe",
+                  "textColor": "#71717a",
+                  "fontStyle": "",
+                  "horizontalAlignment": "CENTER",
+                  "verticalAlignment": "TOP"
                 }
               },
               "isDeprecated": false,
@@ -1083,11 +1142,12 @@
               "searchKey": "",
               "parentId": "0",
               "renderMode": "CANVAS",
-              "horizontalAlignment": "LEFT",
-              "isVisibleSearch": true,
-              "isVisiblePagination": true,
+              "horizontalAlignment": "CENTER",
+              "isVisibleSearch": "{{Button1.text === \"Submit\"}}",
+              "isVisiblePagination": "{{Button1.text === \"Submit\"}}",
               "iconAlign": "left",
-              "verticalAlignment": "CENTER"
+              "cellBackground": "#dbeafe",
+              "verticalAlignment": "TOP"
             },
             {
               "boxShadow": "none",
@@ -1384,6 +1444,47 @@
               "isLoading": false,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "width": 792
+            },
+            {
+              "widgetName": "Text3",
+              "displayName": "Text",
+              "iconSVG": "/static/media/icon.97c59b52.svg",
+              "topRow": 72,
+              "bottomRow": 95,
+              "parentRowSpace": 10,
+              "type": "TEXT_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "overflow": "TRUNCATE",
+              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+              "parentColumnSpace": 20.0625,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 0,
+              "dynamicBindingPathList": [
+                {
+                  "key": "fontFamily"
+                },
+                {
+                  "key": "borderRadius"
+                }
+              ],
+              "shouldTruncate": false,
+              "truncateButtonColor": "#FFC13D",
+              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+              "key": "c7sg3cbckr",
+              "isDeprecated": false,
+              "rightColumn": 16,
+              "textAlign": "LEFT",
+              "widgetId": "g4x6l2iong",
+              "isVisible": false,
+              "fontStyle": "BOLD",
+              "textColor": "#231F20",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "fontSize": "1rem"
             }
           ]
         },
@@ -1415,7 +1516,8 @@
           "Text1Copy",
           "Text1Copy1",
           "Text1Copy2",
-          "Text2"
+          "Text2",
+          "Text3"
         ],
         "validOnPageLoadActions": true,
         "id": "vivek",
