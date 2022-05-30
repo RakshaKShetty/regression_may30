@@ -50,9 +50,6 @@
                   "key": "menuVariant"
                 },
                 {
-                  "key": "borderRadius"
-                },
-                {
                   "key": "boxShadow"
                 },
                 {
@@ -63,6 +60,9 @@
                 },
                 {
                   "key": "menuItems.menuItem1.isVisible"
+                },
+                {
+                  "key": "borderRadius"
                 }
               ],
               "displayName": "Menu Button",
@@ -106,9 +106,6 @@
                   "key": "menuVariant"
                 },
                 {
-                  "key": "borderRadius"
-                },
-                {
                   "key": "boxShadow"
                 },
                 {
@@ -119,6 +116,9 @@
                 },
                 {
                   "key": "menuItems.menuItem1.isVisible"
+                },
+                {
+                  "key": "borderRadius"
                 }
               ],
               "isDisabled": "{{Checkbox1.isChecked}}",
@@ -278,8 +278,8 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
-              "borderRadius": "{{RadioGroup3.selectedOptionValue === 'SlC' ? '0.375rem':'1.5rem'}}",
-              "menuColor": "{{RadioGroup1.selectedOptionValue === 'P' ? '#FFC0CB':'#006400'}}",
+              "borderRadius": "{{RadioGroup3.selectedOptionValue === 'SC' ? '0.375rem':'1.5rem'}}",
+              "menuColor": "{{RadioGroup1.selectedOptionValue === 'P' ? ' #e75480':'#006400'}}",
               "iconAlign": "left",
               "placement": "{{RadioGroup5.selectedOptionValue === 'C' ? 'CENTER':'BETWEEN'}}"
             },
@@ -624,6 +624,7 @@
             {
               "boxShadow": "none",
               "widgetName": "RadioGroup3",
+              "dynamicPropertyPathList": [],
               "displayName": "Radio Group",
               "iconSVG": "/static/media/icon.ba2b2ee0.svg",
               "topRow": 34,
@@ -632,7 +633,7 @@
               "labelWidth": 5,
               "type": "RADIO_GROUP_WIDGET",
               "hideCard": false,
-              "defaultOptionValue": "SlC",
+              "defaultOptionValue": "SC",
               "animateLoading": true,
               "parentColumnSpace": 12.5625,
               "dynamicTriggerPathList": [],
@@ -645,12 +646,12 @@
               "labelPosition": "Left",
               "options": [
                 {
-                  "label": "SlC",
-                  "value": "SlightlyCurved"
+                  "label": "SlightlyCurved",
+                  "value": "SC"
                 },
                 {
-                  "label": "R",
-                  "value": "Rounded"
+                  "label": "Rounded",
+                  "value": "R"
                 }
               ],
               "isDisabled": false,
