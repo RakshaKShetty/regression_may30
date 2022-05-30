@@ -3,11 +3,13 @@
   "serverSchemaVersion": 4,
   "pageOrder": [
     "MenuButtonWidget",
-    "Rating Widget"
+    "Rating Widget",
+    "InputWidget"
   ],
   "publishedPageOrder": [
     "MenuButtonWidget",
-    "Rating Widget"
+    "Rating Widget",
+    "InputWidget"
   ],
   "publishedDefaultPageName": "MenuButtonWidget",
   "unpublishedDefaultPageName": "MenuButtonWidget",
