@@ -6,14 +6,16 @@
     "Rating Widget",
     "InputWidget",
     "AudioWidget",
-    "AudioRecorderWidget"
+    "AudioRecorderWidget",
+    "FilePicker"
   ],
   "publishedPageOrder": [
     "MenuButtonWidget",
     "Rating Widget",
     "InputWidget",
     "AudioWidget",
-    "AudioRecorderWidget"
+    "AudioRecorderWidget",
+    "FilePicker"
   ],
   "publishedDefaultPageName": "MenuButtonWidget",
   "unpublishedDefaultPageName": "MenuButtonWidget",
