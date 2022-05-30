@@ -1476,7 +1476,7 @@
               "rightColumn": 16,
               "textAlign": "LEFT",
               "widgetId": "g4x6l2iong",
-              "isVisible": false,
+              "isVisible": true,
               "fontStyle": "BOLD",
               "textColor": "#231F20",
               "version": 1,
