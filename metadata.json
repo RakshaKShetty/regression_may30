@@ -152,6 +152,10 @@
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
     },
+    "Page1_Query1": {
+      "unpublishedUserSetOnLoad": true,
+      "publishedUserSetOnLoad": true
+    },
     "Postgre_Insert_Data": {
       "unpublishedUserSetOnLoad": true,
       "publishedUserSetOnLoad": true
@@ -284,6 +288,9 @@
     "Mongo_no_raw": [
       "Table1"
     ],
+    "Page1": [
+      "Table1"
+    ],
     "mongo_crud": [
       "data_table"
     ]
@@ -293,6 +300,9 @@
       "data_table"
     ],
     "Mongo_no_raw": [
+      "Table1"
+    ],
+    "Page1": [
       "Table1"
     ],
     "mongo_crud": [
