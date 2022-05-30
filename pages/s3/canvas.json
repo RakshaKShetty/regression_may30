@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "Page1",
-    "slug": "page1",
+    "name": "s3",
+    "slug": "s3",
     "layouts": [
       {
         "viewMode": false,
@@ -28,16 +28,17 @@
         },
         "layoutOnLoadActions": [],
         "validOnPageLoadActions": true,
-        "id": "Page1",
+        "id": "s3",
         "deleted": false,
         "policies": [],
         "userPermissions": []
       }
     ],
     "userPermissions": [],
-    "policies": []
+    "policies": [],
+    "isHidden": false
   },
   "deleted": false,
   "policies": [],
-  "gitSyncId": "6294545d01c50b76d2027c35_629481b736a07e3004f86779"
+  "gitSyncId": "6294545d01c50b76d2027c35_62947b7b36a07e3004f86722"
 }

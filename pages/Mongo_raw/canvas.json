@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "Page1",
-    "slug": "page1",
+    "name": "Mongo_raw",
+    "slug": "mongo-raw",
     "layouts": [
       {
         "viewMode": false,
@@ -13,31 +13,35 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 950,
+          "bottomRow": 830,
           "containerStyle": "none",
-          "snapRows": 95,
+          "snapRows": 83,
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
           "version": 59,
-          "minHeight": 960,
+          "minHeight": 840,
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
           "leftColumn": 0,
           "children": []
         },
         "layoutOnLoadActions": [],
+        "widgetNames": [
+          "MainContainer"
+        ],
         "validOnPageLoadActions": true,
-        "id": "Page1",
+        "id": "Mongo_raw",
         "deleted": false,
         "policies": [],
         "userPermissions": []
       }
     ],
     "userPermissions": [],
-    "policies": []
+    "policies": [],
+    "isHidden": false
   },
   "deleted": false,
   "policies": [],
-  "gitSyncId": "6294545d01c50b76d2027c35_629481b736a07e3004f86779"
+  "gitSyncId": "6294545d01c50b76d2027c35_6294670901c50b76d2027dfc"
 }
