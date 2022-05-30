@@ -1,0 +1,502 @@
+{
+  "unpublishedPage": {
+    "name": "SwitchGroup",
+    "slug": "switchgroup",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 580,
+          "containerStyle": "none",
+          "snapRows": 58,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 59,
+          "minHeight": 590,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
+          "children": [
+            {
+              "boxShadow": "none",
+              "widgetName": "RadioGroup2",
+              "displayName": "Radio Group",
+              "iconSVG": "/static/media/icon.ba2b2ee0.svg",
+              "topRow": 17,
+              "bottomRow": 25,
+              "parentRowSpace": 10,
+              "labelWidth": 5,
+              "type": "RADIO_GROUP_WIDGET",
+              "hideCard": false,
+              "defaultOptionValue": "R",
+              "animateLoading": true,
+              "parentColumnSpace": 12.5625,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 37,
+              "dynamicBindingPathList": [
+                {
+                  "key": "accentColor"
+                }
+              ],
+              "labelPosition": "Left",
+              "options": [
+                {
+                  "label": "Brown",
+                  "value": "Br"
+                },
+                {
+                  "label": "Red",
+                  "value": "R"
+                }
+              ],
+              "isDisabled": false,
+              "key": "glwk30jyw2",
+              "labelTextSize": "0.875rem",
+              "isRequired": false,
+              "isDeprecated": false,
+              "rightColumn": 57,
+              "widgetId": "pryz7ga82w",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "isVisible": true,
+              "label": "Bold or Italic",
+              "version": 1,
+              "parentId": "0",
+              "labelAlignment": "left",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "isInline": true,
+              "alignment": "left"
+            },
+            {
+              "widgetName": "SwitchGroup1",
+              "isCanvas": false,
+              "dynamicPropertyPathList": [
+                {
+                  "key": "isRequired"
+                },
+                {
+                  "key": "isVisible"
+                },
+                {
+                  "key": "isDisabled"
+                },
+                {
+                  "key": "animateLoading"
+                },
+                {
+                  "key": "labelStyle"
+                },
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "labelTextColor"
+                },
+                {
+                  "key": "labelTextSize"
+                }
+              ],
+              "displayName": "Switch Group",
+              "iconSVG": "/static/media/icon.c98225ee.svg",
+              "labelText": "{{Text1.text}}",
+              "topRow": 5,
+              "bottomRow": 11,
+              "parentRowSpace": 10,
+              "labelWidth": 5,
+              "type": "SWITCH_GROUP_WIDGET",
+              "hideCard": false,
+              "animateLoading": "{{Checkbox4.isChecked}}",
+              "parentColumnSpace": 12.5625,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onSelectionChange"
+                }
+              ],
+              "leftColumn": 3,
+              "dynamicBindingPathList": [
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "isRequired"
+                },
+                {
+                  "key": "isVisible"
+                },
+                {
+                  "key": "isDisabled"
+                },
+                {
+                  "key": "animateLoading"
+                },
+                {
+                  "key": "labelStyle"
+                },
+                {
+                  "key": "labelTextColor"
+                },
+                {
+                  "key": "labelTextSize"
+                },
+                {
+                  "key": "labelText"
+                }
+              ],
+              "labelPosition": "Auto",
+              "onSelectionChange": "{{showAlert('Changed','info')}}",
+              "options": "[\n  {\n    \"label\": \"Blue\",\n    \"value\": \"BLUE\"\n  },\n  {\n    \"label\": \"Green\",\n    \"value\": \"GREEN\"\n  },\n  {\n    \"label\": \"Red\",\n    \"value\": \"RED\"\n  },\n  {\n    \"label\": \"Pink\",\n    \"value\": \"PINK\"\n  },\n  {\n    \"label\": \"Yellow\",\n    \"value\": \"YELLOW\"\n  },\n  {\n    \"label\": \"Black\",\n    \"value\": \"BLACK\"\n  }\n]",
+              "labelStyle": "{{RadioGroup1.selectedOptionValue === 'B' ? 'BOLD' : 'ITALIC'}}",
+              "labelTextColor": "{{RadioGroup2.selectedOptionValue === 'R' ? '#FF0000' : '#964B00'}}",
+              "isDisabled": "{{Checkbox3.isChecked}}",
+              "key": "olnav5ld5m",
+              "labelTextSize": "{{RadioGroup3.selectedOptionValue === 'S' ? '0.875rem' : '1.875rem'}}",
+              "isRequired": "{{Checkbox1.isChecked}}",
+              "isDeprecated": false,
+              "rightColumn": 29,
+              "defaultSelectedValues": "[\n  \"BLACK\"\n]",
+              "widgetId": "hxs7qx7lhw",
+              "accentColor": "{{RadioGroup2.selectedOptionValue === 'R' ? '#FF0000' : '#964B00'}}",
+              "isVisible": "{{Checkbox2.isChecked}}",
+              "version": 1,
+              "parentId": "0",
+              "labelAlignment": "left",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "isInline": false,
+              "alignment": "right"
+            },
+            {
+              "widgetName": "Checkbox1",
+              "displayName": "Checkbox",
+              "iconSVG": "/static/media/icon.aaab032b.svg",
+              "topRow": 39,
+              "bottomRow": 43,
+              "parentRowSpace": 10,
+              "type": "CHECKBOX_WIDGET",
+              "alignWidget": "LEFT",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 12.5625,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 22,
+              "dynamicBindingPathList": [
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "borderRadius"
+                }
+              ],
+              "labelPosition": "Left",
+              "isDisabled": false,
+              "key": "9hyav328qb",
+              "isRequired": false,
+              "isDeprecated": false,
+              "rightColumn": 29,
+              "widgetId": "wg7um130uu",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "isVisible": true,
+              "label": "Required",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "defaultCheckedState": true
+            },
+            {
+              "widgetName": "Checkbox2",
+              "displayName": "Checkbox",
+              "iconSVG": "/static/media/icon.aaab032b.svg",
+              "topRow": 44,
+              "bottomRow": 48,
+              "parentRowSpace": 10,
+              "type": "CHECKBOX_WIDGET",
+              "alignWidget": "LEFT",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 12.5625,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 22,
+              "dynamicBindingPathList": [
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "borderRadius"
+                }
+              ],
+              "labelPosition": "Left",
+              "isDisabled": false,
+              "key": "9hyav328qb",
+              "isRequired": false,
+              "isDeprecated": false,
+              "rightColumn": 29,
+              "widgetId": "0h3ar8q18h",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "isVisible": true,
+              "label": "Visible",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "defaultCheckedState": true
+            },
+            {
+              "widgetName": "Checkbox3",
+              "displayName": "Checkbox",
+              "iconSVG": "/static/media/icon.aaab032b.svg",
+              "topRow": 49,
+              "bottomRow": 53,
+              "parentRowSpace": 10,
+              "type": "CHECKBOX_WIDGET",
+              "alignWidget": "LEFT",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 12.5625,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 22,
+              "dynamicBindingPathList": [
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "borderRadius"
+                }
+              ],
+              "labelPosition": "Left",
+              "isDisabled": false,
+              "key": "9hyav328qb",
+              "isRequired": false,
+              "isDeprecated": false,
+              "rightColumn": 29,
+              "widgetId": "6fytyri3yi",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "isVisible": true,
+              "label": "Disabled",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "defaultCheckedState": true
+            },
+            {
+              "widgetName": "Checkbox4",
+              "displayName": "Checkbox",
+              "iconSVG": "/static/media/icon.aaab032b.svg",
+              "topRow": 49,
+              "bottomRow": 53,
+              "parentRowSpace": 10,
+              "type": "CHECKBOX_WIDGET",
+              "alignWidget": "LEFT",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 12.5625,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 34,
+              "dynamicBindingPathList": [
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "borderRadius"
+                }
+              ],
+              "labelPosition": "Left",
+              "isDisabled": false,
+              "key": "9hyav328qb",
+              "isRequired": false,
+              "isDeprecated": false,
+              "rightColumn": 41,
+              "widgetId": "4qrggmujup",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "isVisible": true,
+              "label": "Animate Loading",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "defaultCheckedState": true
+            },
+            {
+              "boxShadow": "none",
+              "widgetName": "RadioGroup1",
+              "displayName": "Radio Group",
+              "iconSVG": "/static/media/icon.ba2b2ee0.svg",
+              "topRow": 8,
+              "bottomRow": 16,
+              "parentRowSpace": 10,
+              "labelWidth": 5,
+              "type": "RADIO_GROUP_WIDGET",
+              "hideCard": false,
+              "defaultOptionValue": "B",
+              "animateLoading": true,
+              "parentColumnSpace": 12.5625,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 37,
+              "dynamicBindingPathList": [
+                {
+                  "key": "accentColor"
+                }
+              ],
+              "labelPosition": "Left",
+              "options": [
+                {
+                  "label": "Bold",
+                  "value": "B"
+                },
+                {
+                  "label": "Italic",
+                  "value": "I"
+                }
+              ],
+              "isDisabled": false,
+              "key": "glwk30jyw2",
+              "labelTextSize": "0.875rem",
+              "isRequired": false,
+              "isDeprecated": false,
+              "rightColumn": 57,
+              "widgetId": "jlu7nz0vpl",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "isVisible": true,
+              "label": "Bold or Italic",
+              "version": 1,
+              "parentId": "0",
+              "labelAlignment": "left",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "isInline": true,
+              "alignment": "left"
+            },
+            {
+              "boxShadow": "none",
+              "widgetName": "RadioGroup3",
+              "displayName": "Radio Group",
+              "iconSVG": "/static/media/icon.ba2b2ee0.svg",
+              "topRow": 27,
+              "bottomRow": 35,
+              "parentRowSpace": 10,
+              "labelWidth": 5,
+              "type": "RADIO_GROUP_WIDGET",
+              "hideCard": false,
+              "defaultOptionValue": "S",
+              "animateLoading": true,
+              "parentColumnSpace": 12.5625,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 37,
+              "dynamicBindingPathList": [
+                {
+                  "key": "accentColor"
+                }
+              ],
+              "labelPosition": "Left",
+              "options": [
+                {
+                  "label": "small",
+                  "value": "S"
+                },
+                {
+                  "label": "ExtraL",
+                  "value": "XL"
+                }
+              ],
+              "isDisabled": false,
+              "key": "glwk30jyw2",
+              "labelTextSize": "0.875rem",
+              "isRequired": false,
+              "isDeprecated": false,
+              "rightColumn": 57,
+              "widgetId": "8vf4gm0hab",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "isVisible": true,
+              "label": "Label",
+              "version": 1,
+              "parentId": "0",
+              "labelAlignment": "left",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "isInline": true,
+              "alignment": "left"
+            },
+            {
+              "widgetName": "Text1",
+              "displayName": "Text",
+              "iconSVG": "/static/media/icon.97c59b52.svg",
+              "topRow": 36,
+              "bottomRow": 40,
+              "parentRowSpace": 10,
+              "type": "TEXT_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "overflow": "NONE",
+              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+              "parentColumnSpace": 12.5625,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 3,
+              "dynamicBindingPathList": [
+                {
+                  "key": "fontFamily"
+                },
+                {
+                  "key": "borderRadius"
+                }
+              ],
+              "shouldTruncate": false,
+              "truncateButtonColor": "#FFC13D",
+              "text": "Switch your choices",
+              "key": "d6qhnm2p0a",
+              "isDeprecated": false,
+              "rightColumn": 19,
+              "textAlign": "LEFT",
+              "widgetId": "gfah2og319",
+              "isVisible": true,
+              "fontStyle": "BOLD",
+              "textColor": "#231F20",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "fontSize": "1rem"
+            }
+          ]
+        },
+        "layoutOnLoadActions": [],
+        "widgetNames": [
+          "Checkbox1",
+          "Checkbox2",
+          "Checkbox3",
+          "Checkbox4",
+          "MainContainer",
+          "RadioGroup1",
+          "RadioGroup2",
+          "RadioGroup3",
+          "SwitchGroup1",
+          "Text1"
+        ],
+        "validOnPageLoadActions": true,
+        "id": "SwitchGroup",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "policies": [],
+  "gitSyncId": "629458bd01c50b76d2027c93_6294dac43cdff53a16e07600"
+}

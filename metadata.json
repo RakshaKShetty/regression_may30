@@ -7,7 +7,8 @@
     "InputWidget",
     "AudioWidget",
     "AudioRecorderWidget",
-    "FilePicker"
+    "FilePicker",
+    "SwitchGroup"
   ],
   "publishedPageOrder": [
     "MenuButtonWidget",
@@ -15,7 +16,8 @@
     "InputWidget",
     "AudioWidget",
     "AudioRecorderWidget",
-    "FilePicker"
+    "FilePicker",
+    "SwitchGroup"
   ],
   "publishedDefaultPageName": "MenuButtonWidget",
   "unpublishedDefaultPageName": "MenuButtonWidget",
