@@ -2,13 +2,13 @@
   "clientSchemaVersion": 1,
   "serverSchemaVersion": 4,
   "pageOrder": [
-    "Page1"
+    "MenuButtonWidget"
   ],
   "publishedPageOrder": [
-    "Page1"
+    "MenuButtonWidget"
   ],
-  "publishedDefaultPageName": "Page1",
-  "unpublishedDefaultPageName": "Page1",
+  "publishedDefaultPageName": "MenuButtonWidget",
+  "unpublishedDefaultPageName": "MenuButtonWidget",
   "invisibleActionFields": {},
   "publishedLayoutmongoEscapedWidgets": {},
   "unpublishedLayoutmongoEscapedWidgets": {},
