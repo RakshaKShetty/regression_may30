@@ -4,12 +4,14 @@
   "pageOrder": [
     "MenuButtonWidget",
     "Rating Widget",
-    "InputWidget"
+    "InputWidget",
+    "Page1"
   ],
   "publishedPageOrder": [
     "MenuButtonWidget",
     "Rating Widget",
-    "InputWidget"
+    "InputWidget",
+    "Page1"
   ],
   "publishedDefaultPageName": "MenuButtonWidget",
   "unpublishedDefaultPageName": "MenuButtonWidget",
