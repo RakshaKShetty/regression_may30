@@ -57,9 +57,7 @@
               "topRow": 3,
               "bottomRow": 7,
               "parentRowSpace": 10,
-              "allowedFileTypes": [
-                "image/jpeg"
-              ],
+              "allowedFileTypes": [],
               "type": "FILE_PICKER_WIDGET_V2",
               "hideCard": false,
               "animateLoading": "{{Checkbox4.isChecked}}",
