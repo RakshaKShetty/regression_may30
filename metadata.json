@@ -13,7 +13,9 @@
     "s3",
     "Assets-test.appsmith.com",
     "SMTP",
-    "mock_database"
+    "mock_database",
+    "gsheet",
+    "gsheet Copy"
   ],
   "publishedPageOrder": [
     "Postgre",
@@ -27,7 +29,9 @@
     "s3",
     "Assets-test.appsmith.com",
     "SMTP",
-    "mock_database"
+    "mock_database",
+    "gsheet",
+    "gsheet Copy"
   ],
   "publishedDefaultPageName": "Postgre",
   "unpublishedDefaultPageName": "Postgre",
@@ -205,6 +209,50 @@
       "publishedUserSetOnLoad": true
     },
     "crud_postgre_UpdateQuery": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
+    "gsheet Copy_bulk_insert": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
+    "gsheet Copy_bulk_update": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
+    "gsheet Copy_create_spreedsheet": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
+    "gsheet Copy_delete_row": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
+    "gsheet Copy_delete_sheet": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
+    "gsheet Copy_get_data1": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
+    "gsheet Copy_insert_query": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
+    "gsheet Copy_list_sheet": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
+    "gsheet Copy_update_query": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
+    "gsheet_get_data": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
+    "gsheet_insert_query": {
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
     },
