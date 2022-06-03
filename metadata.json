@@ -15,8 +15,8 @@
   "unpublishedDefaultPageName": "Page1",
   "invisibleActionFields": {
     "vivek_Api1": {
-      "unpublishedUserSetOnLoad": false,
-      "publishedUserSetOnLoad": false
+      "unpublishedUserSetOnLoad": true,
+      "publishedUserSetOnLoad": true
     },
     "vivek_Query1": {
       "unpublishedUserSetOnLoad": false,
